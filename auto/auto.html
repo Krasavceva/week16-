@@ -11,55 +11,42 @@
 
 <body>
     <div class="container">
-        <div class="inner-container">
-            <div class="heading">Калькулятор стоимости авто</div>
-            <form class="form">
-                <div>
-                    <p>Марка</p>
-                    <select id="brand">
-                        <option value="Skoda" class="brand">Skoda</option>
-                        <option value="Audi" class="brand">Audi</option>
-                        <option value="BMW" class="brand">BMW</option>
-                        <option value="Renault" class="brand">Renault</option>
-                        <option value="Nissan" class="brand">Nissan</option>
-                    </select>
-                </div>
-                <div>
-                    <p>Возраст автомобиля:</p>
-                    <p><input type="radio" name="age" value="class_0" class="year" checked>Меньше 3 лет</p>
-                    <p><input type="radio" name="age" value="class_1" class="year">От 3 до 5 лет</p>
-                    <p><input type="radio" name="age" value="class_2" class="year">От 5 до 7 лет</p>
-                    <p><input type="radio" name="age" value="class_3" class="year">Больше 7 лет</p>
-                </div>
-                <div>
-                    <p>Уровень оснащения:</p>
-                    <select class="level">
-                        <option value="basic">Базовый</option>
-                        <option value="middle">Средний</option>
-                        <option value="maxi">Максимальный</option>
-                    </select>
-                </div>
-                <div>
-                    <p>Дополнительно:</p>
-                    <label>Кондиционер
-                        <input type="checkbox" class="options">
-                    </label>
-                    <label>Парктроник
-                        <input type="checkbox" class="options">
-                    </label>
-                    <label>Чехлы
-                        <input type="checkbox" class="options">
-                    </label>
-                </div>
-                <button class="btn">Рассчитать</button>
-            </form>
-
-
-
-        </div>
+        <h1 class="heading">Калькулятор стоимости авто</h1>
+        <form class="form">
+            <div class="auto">
+                <p>Выберите марку машины</p>
+                <select id="brand">
+                    <option value="Skoda" class="brand">Nissan</option>
+                    <option value="Audi" class="brand">Audi</option>
+                    <option value="BMW" class="brand">BMW</option>
+                    <option value="Renault" class="brand">Mercedes</option>
+                    <option value="Nissan" class="brand">Skoda</option>
+                </select>
+            </div>
+            <div class="complete">
+                <p>Комплектация:</p>
+                <select>
+                    <option value="Economy">Economy</option>
+                    <option value="Comfort">Comfort</option>
+                    <option value="Business">Business</option>
+                </select>
+            </div>
+            <div class="options">
+                <p>Дополнительно:</p>
+                <label>Кондиционер
+                    <input type="checkbox" class="check" value="3000">
+                </label>
+                <label>Парктроник
+                    <input type="checkbox" class="check" value="2500">
+                </label>
+                <label>Чехлы
+                    <input type="checkbox" class="check" value="1000">
+                </label>
+            </div>
+            <button class="btn all__btn">Рассчитать</button>
+            <button class="btn2 all__btn">Сбросить</button>
+        </form>
     </div>
-    </div>
-
 
     <script src="./auto.js/auto.js"></script>
 </body>
